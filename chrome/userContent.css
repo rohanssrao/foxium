@@ -1,0 +1,13 @@
+/** Import Lepton stylesheet (Content) ****************************************/
+@import url("css/leptonContent.css");
+
+/** Add your custom styles below **********************************************/
+
+@-moz-document
+url("about:blank"),
+url("about:home"),
+url("about:newtab") {
+    body {
+        background: #36393f !important;
+    }
+}

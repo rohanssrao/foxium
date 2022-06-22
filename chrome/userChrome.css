@@ -1,0 +1,102 @@
+/** Import Lepton stylesheet (Chrome) *****************************************/
+@import url("css/leptonChrome.css");
+@import url("materialfox-icons/icons.css");
+
+/** Add your custom styles below **********************************************/
+
+/* Make bookmarks bar taller */
+#PersonalToolbar {
+  min-height: 32px !important;
+}
+/* Make bookmarks bar text more centered */
+#personal-toolbar-empty-description, #PersonalToolbar .toolbarbutton-1, toolbarbutton.bookmark-item:not(.subviewbutton) {
+  margin: -1px 5px 2px 5px !important;
+}
+
+/* Make URL bar rounder */
+#urlbar-background, #searchbar {
+  border-radius: 15px !important;
+}
+
+/* Add more left & right padding to URL bar */
+#urlbar-input-container {
+  padding: 0 5px 0 4px !important;
+}
+
+/* Make extension box rounder */
+#identity-icon-box, #urlbar-label-box, #urlbar-search-mode-indicator {
+  border-radius: 15px !important;
+  margin: 3px 0px 3px 0px !important;
+}
+
+#urlbar-search-mode-indicator {
+  transform: translateX(-4px);
+}
+
+/* Add more left-padding to tab titles */
+.tab-content {
+  padding-left: 10px !important;
+}
+
+/* Make tab titles higher */
+.tab-text {
+  margin: 0 0 2px 0 !important;
+}
+
+/* Make tabs rounder at the top */
+:root {
+  --tab-border-radius: 7px !important;
+}
+
+/*= Make tabs rounder at the bottom */
+@supports -moz-bool-pref("userChrome.tab.bottom_rounded_corner") {
+  #tabbrowser-tabs {
+    --tab-corner-rounding: 9px;
+  }
+}
+
+/*= Remove tab outline */
+@supports -moz-bool-pref("userChrome.tab.box_shadow") {
+  #TabsToolbar[brighttext]
+    #tabbrowser-tabs:not([noshadowfortests])
+    .tabbrowser-tab[visuallyselected="true"]:not(:focus)
+    > .tab-stack
+    > .tab-background:-moz-lwtheme {
+    /* Origina: 0 0 1px var(--tab-line-color, rgba(128,128,142,0.9))
+         Bright: 0 0 1px var(--tab-line-color, rgba(128,128,142,0.9)), 0 0 4px rgba(128,128,142,0.5) */
+    box-shadow: none !important;
+  }
+}
+
+/*= Remove tab outline at bottom */
+@supports -moz-bool-pref("userChrome.tab.bottom_rounded_corner") {
+
+  :root:not([customizing="true"]):is([lwtheme-mozlightdark], [style*="--lwt-accent-color: rgb(28, 27, 34); --lwt-text-color: rgba(251, 251, 254);"])
+    #TabsToolbar[brighttext]
+    #tabbrowser-tabs:not([noshadowfortests])
+    tab[visuallyselected]
+    > stack:-moz-lwtheme::before,
+  :root:not([customizing="true"]):is([lwtheme-mozlightdark], [style*="--lwt-accent-color: rgb(28, 27, 34); --lwt-text-color: rgba(251, 251, 254);"])
+    #TabsToolbar[brighttext]
+    #tabbrowser-tabs:not([noshadowfortests])
+    tab[visuallyselected]
+    > stack:-moz-lwtheme::after {
+    /* As Selected Tab - Box Shadow */
+    stroke: none !important;
+  }
+}
+
+/*-------------defaults-------------*/
+
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+#editBMPanel_locationRow {
+  visibility: visible !important;
+}
+
+/* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
+#context-sendimage,
+#context-sendvideo,
+#context-sendaudio,
+#context-setDesktopBackground {
+  display: none !important;
+}
