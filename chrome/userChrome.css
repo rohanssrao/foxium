@@ -1,0 +1,117 @@
+/** Import Lepton stylesheet (Chrome) *****************************************/
+@import url("css/leptonChrome.css");
+
+
+/** Add your custom styles below **********************************************/
+
+@import url("materialfox-icons/icons.css");
+
+/* Change default favicon for bookmarklets */
+.bookmark-item > .toolbarbutton-icon[src*="javascript:"],
+.bookmark-item > .menu-iconic-left > .menu-iconic-icon[src*="javascript:"] {
+  background:url("materialfox-icons/globe.svg") !important;
+  background-size: 16px !important;
+  padding-left: 16px !important;
+}
+
+/* Change folder icon */
+.bookmark-item > .toolbarbutton-icon[type="menu"],
+.bookmark-item[container="true"] > .menu-iconic-left .menu-iconic-icon {
+  background:url("materialfox-icons/folder.svg") !important;
+  background-size: 16px !important;
+  padding-left: 16px !important;
+}
+
+/* Change extensions icon */
+#unified-extensions-button {
+	list-style-image: url("materialfox-icons/addons.svg") !important;
+}
+
+/* Push bookmark icon up */
+.bookmark-item > .toolbarbutton-icon {
+  margin-bottom: 1px !important;
+}
+
+:root {
+  /* Make buttons rounder */
+  --toolbarbutton-border-radius: 15px !important;
+}
+
+/* Make bookmarks bar taller */
+#PersonalToolbar {
+  min-height: 32px !important;
+}
+
+/* Make bookmarks bar text more centered */
+#personal-toolbar-empty-description, #PersonalToolbar .toolbarbutton-1, toolbarbutton.bookmark-item:not(.subviewbutton) {
+  margin: 2px 3px 3px 3px !important;
+}
+
+/* Make bookmarks rounder */
+.bookmark-item {
+  padding: 3px 7px !important;
+  height: 27px;
+}
+
+/* Make left, right, reload, home buttons rounded */
+toolbar .toolbarbutton-1 > .toolbarbutton-icon,
+.toolbarbutton-1 {
+  border-radius: 13px !important;
+}
+
+/* Make extension box rounder */
+#urlbar-input-container box[role="button"],
+#urlbar-label-box,
+#urlbar-search-mode-indicator {
+  margin: 3px 0px 3px 0px !important;
+}
+
+#urlbar-search-mode-indicator {
+  border-radius: 30px !important;
+  transform: translateX(-4px);
+}
+
+/* Add more left & right padding to URL bar */
+#urlbar-input-container {
+  padding: 0 5px 0 4px !important;
+}
+
+/* Add more left-padding to tab titles */
+.tab-content {
+  padding-left: 10px !important;
+}
+
+/* Make tab titles higher */
+.tab-text {
+  margin: 0 0 2px 0 !important;
+}
+
+/* Make tabs rounder at the top */
+:root {
+  --tab-border-radius: 7px !important;
+}
+
+/* Disable line separator after last tab */
+#tabs-newtab-button::before {
+  display: none;
+}
+
+/*-------------defaults-------------*/
+
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+/*
+.editBMPanel_locationRow {
+  display: initial !important;
+}
+*/
+
+/* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
+/*
+#context-sendimage,
+#context-sendvideo,
+#context-sendaudio,
+#context-sep-setbackground,
+#context-setDesktopBackground {
+  display: none !important;
+}
+*/
