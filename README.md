@@ -7,7 +7,8 @@ Uses [Firefox-UI-Fix](https://github.com/black7375/Firefox-UI-Fix) as a base wit
 
 # Installation
 
+1. Enable stylesheet customization by going to `about:config` and setting the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true`.
 1. Go to `about:profiles` and click **Open Directory** in the Root Directory row of the profile you want to edit.
-  - *Note: If using the Flatpak version of Firefox, go to `~/.var/app/org.mozilla.firefox/.mozilla/firefox/<profile-name>`, where `<profile-name>` is the last part of the path shown in `about:profiles` for your profile.*
-3. Copy `chrome/` and `user.js` from this repo into the directory.
-4. Restart your browser.
+   - *Note: If using the Flatpak version of Firefox, go to `~/.var/app/org.mozilla.firefox/.mozilla/firefox/<profile-name>`, where `<profile-name>` is the last part of the path shown in `about:profiles` for your profile.*
+1. Copy `chrome/` and `user.js` from this repo into the directory.
+1. Restart your browser.
