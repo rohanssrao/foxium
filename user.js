@@ -350,3 +350,7 @@ user_pref("toolkit.scrollbox.verticalScrollDistance",           3);            /
 
 user_pref("userChrome.decoration.disable_panel_animate",    true);
 user_pref("userChrome.decoration.disable_sidebar_animate",  true);
+
+// Tab rounding
+user_pref("userChrome.tab.bottom_rounded_corner.all",       true);
+user_pref("userChrome.tab.bottom_rounded_corner.chrome",    true);
