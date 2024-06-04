@@ -350,3 +350,4 @@ user_pref("toolkit.scrollbox.verticalScrollDistance",           3);            /
 
 user_pref("userChrome.decoration.disable_panel_animate",    true);
 user_pref("userChrome.decoration.disable_sidebar_animate",  true);
+user_pref("userChrome.tab.box_shadow",                 false);
