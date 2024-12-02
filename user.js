@@ -1,3 +1,4 @@
+// v8.6.5 Lepton
 // ** Theme Default Options ****************************************************
 // userchrome.css usercontent.css activate
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
@@ -46,6 +47,9 @@ user_pref("userChrome.tab.bottom_rounded_corner",      true);
 // Photon Only
 user_pref("userChrome.tab.photon_like_contextline",   false);
 user_pref("userChrome.rounding.square_tab",           false);
+
+// Proton Only
+// user_pref("userChrome.tab.supernova_like_contextline",   true);
 
 // == Theme Compatibility Settings =============================================
 // user_pref("userChrome.compatibility.accent_color",         true); // Firefox v103 Below
@@ -177,6 +181,7 @@ user_pref("userChrome.rounding.square_tab",           false);
 // user_pref("userChrome.tab.close_button_at_hover.with_selected", true);  // Need close_button_at_hover
 // user_pref("userChrome.tab.sound_show_label",                true); // Need remove sound_hide_label
 // user_pref("userChrome.tab.container.on_top",                true);
+// user_pref("userChrome.tab.container.always_long",           true);
 // user_pref("userChrome.tab.sound_with_favicons.on_center",   true);
 // user_pref("userChrome.tab.selected_bold",                   true);
 
@@ -258,6 +263,7 @@ user_pref("userChrome.icon.menu",                 true);
 user_pref("userChrome.icon.context_menu",         true);
 user_pref("userChrome.icon.global_menu",          true);
 user_pref("userChrome.icon.global_menubar",       true);
+user_pref("userChrome.icon.1-25px_stroke",        true);
 
 // -- User Content -------------------------------------------------------------
 user_pref("userContent.player.ui",             true);
@@ -279,6 +285,14 @@ user_pref("userContent.page.dark_mode",        true); // Need proton_color
 user_pref("userContent.page.proton",           true); // Need proton_color
 
 // ** Useful Options ***********************************************************
+// Tab preview
+// https://blog.nightly.mozilla.org/2024/02/06/a-preview-of-tab-previews-these-weeks-in-firefox-issue-153/
+user_pref("browser.tabs.hoverPreview.enabled", true);
+
+// Paste suggestion at urlbar
+// https://blog.nightly.mozilla.org/2023/12/04/url-gonna-want-to-check-this-out-these-weeks-in-firefox-issue-150/
+user_pref("browser.urlbar.clipboard.featureGate", true);
+
 // Integrated calculator at urlbar
 user_pref("browser.urlbar.suggest.calculator", true);
 
@@ -288,6 +302,18 @@ user_pref("browser.urlbar.suggest.calculator", true);
 // Draw in Titlebar
 // user_pref("browser.tabs.drawInTitlebar", true);
 // user_pref("browser.tabs.inTitlebar",        1); // Nightly, 96 Above
+
+// Searchbar, Removed from settings starting with FF v122
+// user_pref("browser.search.widget.inNavBar",    true);
+
+// Firefox view search
+// https://blog.nightly.mozilla.org/2023/12/14/better-searching-in-firefox-to-close-out-2023-these-weeks-in-firefox-issue-151/
+// user_pref("browser.firefox-view.search.enabled",       true);
+// user_pref("browser.firefox-view.virtual-list.enabled", true);
+
+// Firefox screenshot
+// https://blog.nightly.mozilla.org/2024/01/22/happy-new-year-these-weeks-in-firefox-issue-152/
+// user_pref("screenshots.browser.component.enabled", true);
 
 // ** Scrolling Settings *******************************************************
 // == Only Sharpen Scrolling ===================================================
